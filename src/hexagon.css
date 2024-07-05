@@ -9,3 +9,63 @@
 .swiper-pagination-bullet {
     background: #4f46e5;
 }
+
+article.active {
+    display: block;
+    animation: fade 0.5s ease backwards;
+}
+
+#sidebar.active {
+    max-height: 405px;
+}
+
+#sidebar.active #sidebar-info_more {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-link.active {
+    color: var(--orange-yellow-crayola);
+}
+
+.modal-container.active {
+    pointer-events: all;
+    visibility: visible;
+}
+
+.overlay.active {
+    opacity: 0.8;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.modal-container.active .testimonials-modal {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.filter-select.active .select-icon {
+    transform: rotate(0.5turn);
+}
+
+.filter-select.active + .select-list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.project-item.active {
+    display: block;
+    animation: scaleUp 0.25s ease forwards;
+}
+
+@media(min-width: 580px) {
+    .sidebar.active {
+        max-height: 584px;
+    }
+}
+@media(min-width: 768px) {
+    .filter-item button.active {
+        color: var(--orange-yellow-crayola);
+    }
+}

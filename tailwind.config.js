@@ -3,7 +3,39 @@ module.exports = {
   content: ['./**/*.html'],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['poppins', 'sans-serif'],
+      },
       colors: {
+        bittersweet: {
+          shimmer: 'hsl(0, 43%, 51%)',
+        },
+        gray: {
+          light: 'hsl(0, 0%, 84%)',
+          'light-70': 'hsla(0, 0%, 84%, 0.7)'
+        },
+        vegas: {
+          gold: 'hsl(45, 54%, 58%)',
+        },
+        smoky: {
+          black: 'hsl(0, 0%, 7%)',
+        },
+        onyx: {
+          DEFAULT: 'hsl(240, 1%, 17%)',
+        },
+        crayola: {
+          DEFAULT: 'hsl(45, 100%, 72%)',
+        },
+        jet: {
+          DEFAULT: 'hsl(0, 0%, 22%)',
+        },
+        eerie: {
+          black: 'hsl(240, 2%, 12%)',
+          'black-2': 'hsl(240, 2%, 13%)',
+        },
+        smoky: {
+          black: 'hsl(0, 0%, 7%)',
+        },
         whatsapp: {
           DEFAULT: '#00d757',
         },
