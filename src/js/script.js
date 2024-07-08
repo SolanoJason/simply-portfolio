@@ -21,3 +21,10 @@ if (lightSwitches.length > 0) {
         });
     });
 }
+
+if (!localStorage.getItem('dark-mode')) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        lightSwitches[0].checked = true;
+    } else {
+    }
+}
