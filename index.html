@@ -27,32 +27,76 @@
 <body class="bg-gray-100 dark:bg-black">
 
   <section class="">
-    <div
-      class="py-4 gap-y-4 sm:py-8 container max-w-screen-xl min-h-screen mx-auto 
+    <div class="py-4 gap-y-4 sm:py-8 container max-w-screen-xl min-h-screen mx-auto 
       px-0 flex flex-col justify-between text-center">
       <nav class="flex items-center justify-between px-4 sm:px-8">
 
-        <label class="swap swap-rotate">
-          <!-- this hidden checkbox controls the state -->
-          <input type="checkbox" class="theme-controller theme-switch" />
+        <div class="flex items-center gap-x-4">
+          <label class="swap swap-rotate">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" class="theme-controller theme-switch" />
 
-          <!-- sun icon -->
-          <svg class="swap-off h-10 w-10 fill-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path
-              d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,
-              12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,
-              0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0
-              ,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41
-              ,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
-          </svg>
+            <!-- sun icon -->
+            <svg class="swap-off h-10 w-10 fill-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,
+                12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,
+                0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0
+                ,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41
+                ,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+            </svg>
 
-          <!-- moon icon -->
-          <svg class="swap-on h-10 w-10 fill-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path
-              d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,
-              1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
-          </svg>
-        </label>
+            <!-- moon icon -->
+            <svg class="swap-on h-10 w-10 fill-gray-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,
+                1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+            </svg>
+          </label>
+          <div class="relative inline-block text-left">
+            <div>
+              <button type="button"
+                class="inline-flex justify-center px-3 font-semibold text-gray-900 py-4 dark:text-gray-100"
+                id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-7 w-7">
+                  <path fill-rule="evenodd"
+                    d="M11 5a.75.75 0 0 1 .688.452l3.25 7.5a.75.75 0 1 1-1.376.596L12.89 12H9.109l-.67 1.548a.75.75 0 1 1-1.377-.596l3.25-7.5A.75.75 0 0 1 11 5Zm-1.24 5.5h2.48L11 7.636 9.76 10.5ZM5 1a.75.75 0 0 1 .75.75v1.261a25.27 25.27 0 0 1 2.598.211.75.75 0 1 1-.2 1.487c-.22-.03-.44-.056-.662-.08A12.939 12.939 0 0 1 5.92 8.058c.237.304.488.595.752.873a.75.75 0 0 1-1.086 1.035A13.075 13.075 0 0 1 5 9.307a13.068 13.068 0 0 1-2.841 2.546.75.75 0 0 1-.827-1.252A11.566 11.566 0 0 0 4.08 8.057a12.991 12.991 0 0 1-.554-.938.75.75 0 1 1 1.323-.707c.049.09.099.181.15.271.388-.68.708-1.405.952-2.164a23.941 23.941 0 0 0-4.1.19.75.75 0 0 1-.2-1.487c.853-.114 1.72-.185 2.598-.211V1.75A.75.75 0 0 1 5 1Z"
+                    clip-rule="evenodd">
+                  </path>
+                </svg>
+                <svg class="-mr-1 h-5 w-5 text-gray-400 dark:text-gray-300" viewBox="0 0 20 20" fill="currentColor"
+                  aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div id="dropdown-menu"
+              class="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+              <div class="" role="none">
+                <button class="flex w-full items-center gap-2 px-3 py-2 text-sm text-gray-900 hover:bg-gray-100"
+                  role="menuitem" tabindex="-1" id="menu-item-english">
+                  <span class="opacity-50 font-mono font-bold text-sm pt-[1px] h-4 border border-gray-700 bg-transparent 
+                  inline-flex items-center justify-center rounded-2xl w-[max-content] pl-[6px] pr-1 text-center
+                  tracking-widest">EN</span>
+                  <span class="font-sans">English</span>
+                </button>
+                <button
+                  class="flex w-full items-center gap-2 px-3 py-2 text-sm text-gray-900 rounded-b-md hover:bg-gray-100"
+                  role="menuitem" tabindex="-1" id="menu-item-spanish">
+                  <span class="opacity-50 font-mono font-bold text-sm pt-[1px] h-4 border border-gray-700 bg-transparent 
+                  inline-flex items-center justify-center rounded-2xl w-[max-content] pl-[6px] pr-1 text-center
+                  tracking-widest">ES</span>
+                  <span class="font-sans">Español</span>
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <a class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500"
           href="" download>
@@ -81,8 +125,10 @@
           </div>
 
           <p class="font-normal sm:text-lg text-gray-600 text-md md:text-lg xl:text-xl dark:text-gray-400">
-            I am a Backend Developer with proficiency in Python and Django. I
-            hold a Bachelor’s degree in Systems Engineering from UNASAM.
+            <span class="en">I am a Backend Developer with proficiency in Python and Django. I
+              hold a Bachelor’s degree in Systems Engineering from UNASAM.</span>
+            <span class="es">Soy un desarrollador backend con dominio de Python y Django. I
+              Licenciatura en Ingeniería de Sistemas por la UNASAM.</span>
           </p>
         </div>
       </div>
@@ -123,10 +169,16 @@
   <section class="pt-0 pb-2 sm:pb-4 md:py-12">
     <div class="container max-w-screen-xl mx-auto px-4">
       <h1 class="font-medium text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
-        Skills
+        <span class="en">
+          Skills
+        </span>
+        <span class="es">
+          Habilidades
+        </span>
       </h1>
       <p class="font-normal text-gray-500 dark:text-gray-400 text-base md:text-base mb-6 sm:mb-12 lg:text-lg">
-        Skills highlighted in gold represent areas of higher proficiency:
+        <span class="en">Skills highlighted in gold represent areas of higher proficiency:</span>
+        <span class="es">Las habilidades resaltadas en oro representan áreas de mayor competencia:</span>
       </p>
       <div>
         <div class="badgets-list flex flex-wrap justify-center items-center gap-4">
@@ -465,11 +517,24 @@
   <section class="py-2 sm:py-4 md:py-12">
     <div class="container max-w-screen-xl mx-auto px-4">
       <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5 dark:text-gray-200">
-        Real World Projects
+        <span class="en">
+          Real World Projects
+        </span>
+        <span class="es">
+          Proyectos de la vida real
+        </span>
       </h1>
       <p class="font-normal text-gray-500 dark:text-gray-400 text-base md:text-base mb-6 sm:mb-12 lg:text-lg">
-        Explore my hands-on software development projects, showcasing my skills in backend development, problem-solving,
-        and real-world application of various technologies.
+        <span class="en">
+          Explore my hands-on software development projects, showcasing my skills in backend development,
+          problem-solving,
+          and real-world application of various technologies.
+        </span>
+        <span class="es">
+          Explore mis proyectos prácticos de desarrollo de software, mostrando mis habilidades en desarrollo backend,
+          resolución de problemas,
+          y aplicación en el mundo real de diversas tecnologías.
+        </span>
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
         <div class="relative flex items-center justify-center">
@@ -501,14 +566,26 @@
                   alt="Django Badge">
               </div>
               <p class="text-base lg:text-lg text-gray-500 mb-4 text-left h-28 dark:text-gray-400">
-                WorStat is an educational startup dedicated
-                to advancing the skills of young professionals across Peru in
-                statistical software and tools. Offering courses in R, Python, Power BI, SPSS.
+                <span class="en">
+                  WorStat is an educational startup dedicated
+                  to advancing the skills of young professionals across Peru in
+                  statistical software and tools. Offering courses in R, Python, Power BI, SPSS.
+                </span>
+                <span class="es">
+                  WorStat es una startup educativa dedicada
+                  para promover las habilidades de los jóvenes profesionales en todo el Perú en
+                  software y herramientas estadísticas. Ofreciendo cursos en R, Python, Power BI, SPSS.
+                </span>
               </p>
               <!-- buttons -->
               <a href="https://www.worstat.com/" target="_blank"
                 class="rounded-lg py-2.5 px-6 text-center w-full text-white bg-gray-700 font-semibold text-lg transition-all duration-500 hover:shadow-xl hover:bg-gray-800">
-                Visit Website
+                <span class="en">
+                  Visit Website
+                </span>
+                <span class="es">
+                  Visitar Pagina Web
+                </span>
               </a>
             </div>
           </div>
@@ -538,14 +615,26 @@
                   alt="Django Badge">
               </div>
               <p class="text-base lg:text-lg text-gray-500 dark:text-gray-400 mb-4 text-left h-28">
-                Kiwi Optics is a web app for optics stores, enabling centralized prescription management. Owners can
-                manage employees and assign privileges. Supports detailed prescriptions, patient info, lenses and
-                frames.
+                <span class="en">
+                  Kiwi Optics is a web app for optics stores, enabling centralized prescription management. Owners can
+                  manage employees and assign privileges. Supports detailed prescriptions, patient info, lenses and
+                  frames.
+                </span>
+                <span class="es">Kiwi Optics es una aplicación web para tiendas de óptica que permite la gestión
+                  centralizada de recetas. Los propietarios pueden
+                  gestionar empleados y asignar privilegios. Admite recetas detalladas, información del paciente, lentes
+                  y
+                  marcos.</span>
               </p>
               <!-- buttons -->
               <a href="https://kiwioptics.herokuapp.com/" target="_blank"
                 class="rounded-lg py-2.5 px-6 text-center w-full text-white bg-gray-700 font-semibold text-lg transition-all duration-500 hover:shadow-xl hover:bg-gray-800">
-                Visit Website
+                <span class="en">
+                  Visit Website
+                </span>
+                <span class="es">
+                  Visitar Pagina Web
+                </span>
               </a>
             </div>
           </div>
@@ -575,14 +664,28 @@
                 <img src="https://img.shields.io/badge/env-black?logo=dotenv&logoSize=auto&color=374151" alt="">
               </div>
               <p class="text-base lg:text-lg text-gray-500 mb-4 text-left dark:text-gray-400">
-                A Django project template following best practices with organized structure, split settings, custom user
-                model, and integrations like django-extensions, debug-toolbar, flake8, and black. Requires Poetry and
-                Django.
+                <span class="en">
+                  A Django project template following best practices with organized structure, split settings, custom
+                  user
+                  model, and integrations like django-extensions, debug-toolbar, flake8, and black. Requires Poetry and
+                  Django.
+                </span>
+                <span class="es">
+                  Una plantilla de proyecto Django que sigue las mejores prácticas con estructura organizada,
+                  configuración dividida y usuario personalizado.
+                  model e integraciones como django-extensions, debug-toolbar, flake8 y black. Requiere poesía y
+                  Django.
+                </span>
               </p>
               <!-- buttons -->
               <a href="https://github.com/SolanoJason/django-best-practices-template" target="_blank"
                 class="rounded-lg py-2.5 px-6 text-center w-full text-white bg-gray-700 font-semibold text-lg transition-all duration-500 hover:shadow-xl hover:bg-gray-800">
-                Visit Repository
+                <span class="en">
+                  Visit Repository
+                </span>
+                <span class="es">
+                  Visitar Repositorio
+                </span>
               </a>
             </div>
           </div>
@@ -595,7 +698,12 @@
       <a href="mailto:contact@jasonsolano.tech"
         class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-lg rounded-md hover:bg-gray-50 hover:text-linkedin transition ease-linear duration-500 inline-flex items-center justify-center"
         target="_blank">
-        Hire Me!
+        <span class="en">
+          Hire Me!
+        </span>
+        <span class="es">
+          Contratame!
+        </span>
       </a>
     </div>
   </section>
